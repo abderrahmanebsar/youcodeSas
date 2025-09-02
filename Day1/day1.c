@@ -169,6 +169,8 @@ int main() {
 
     return 0;
 
+    //challenge 13
+
 
 
 
@@ -212,4 +214,38 @@ int main() {
     //     }
 
     // return 0;
+
+
+    //challenge 8 condition 2
+
+    int age, md;
+
+    printf("enterz moi le age : ");
+    scanf("%d",&age);
+
+    printf("enterz moi le Historique médical : ");
+    scanf("%d",&age);
+
+    if ( age < 30 ) {
+        printf("Plan de base");
+    }else if ( age >= 30 && md == 0) {
+        printf("Plan de base");
+    }else if (age >= 30 && md >= 1) {
+        printf("Plan étendu");
+    }
+
+
+    //boucle
+
+    //challenge 1
+
+    int num ;
+    
+    printf("enter the mult number :");
+    scanf("%d",&num);
+
+    for (int i = 1; i <= 10;i++){
+        printf("%d * %d = %d", num, i, num * i);
+    }
+
 }
