@@ -218,21 +218,21 @@ int main() {
 
     //challenge 8 condition 2
 
-    int age, md;
+    // int age, md;
 
-    printf("enterz moi le age : ");
-    scanf("%d",&age);
+    // printf("enterz moi le age : ");
+    // scanf("%d",&age);
 
-    printf("enterz moi le Historique médical : ");
-    scanf("%d",&age);
+    // printf("enterz moi le Historique médical : ");
+    // scanf("%d",&age);
 
-    if ( age < 30 ) {
-        printf("Plan de base");
-    }else if ( age >= 30 && md == 0) {
-        printf("Plan de base");
-    }else if (age >= 30 && md >= 1) {
-        printf("Plan étendu");
-    }
+    // if ( age < 30 ) {
+    //     printf("Plan de base");
+    // }else if ( age >= 30 && md == 0) {
+    //     printf("Plan de base");
+    // }else if (age >= 30 && md >= 1) {
+    //     printf("Plan étendu");
+    // }
 
 
     //boucle
@@ -283,16 +283,35 @@ int main() {
 
     //challenge 3
 
-   int num;
+    //    int num;
 
-   printf("enter a numbre : ");
-   scanf("%d",&num);
+    //    printf("enter a numbre : ");
+    //    scanf("%d",&num);
 
-   for (int i =1; i <= num; i++){
-      printf("%d", i * 2 - 1);
-        if (i != num){
-            printf(" ,");
+    //    for (int i =1; i <= num; i++){
+    //       printf("%d", i * 2 - 1);
+    //         if (i != num){
+    //             printf(" ,");
+    //         }
+    //     }
+    //     printf("\n");
+
+
+    //challenge 5
+
+
+    int base ,exposant, res;
+
+    printf("enter le base : ");
+    scanf("%d",&base);
+
+    printf("enter le exposant : ");
+    scanf("%d",&exposant);
+
+
+    for (int i =1; i <= exposant; i++){
+            res *= base;
         }
-    }
-    printf("\n");
+
+    printf("%d",res);
 }
