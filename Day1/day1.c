@@ -25,4 +25,15 @@ int main() {
     k = c + 273.15;
     
     printf("la température en Kelvin et :%.2f\n",k);
+
+
+    //challenge 3
+
+    float yards, km;
+    printf("Entrez la distance en kilomètres : ");
+    scanf("%f",&km);
+    
+    yards = km * 1093.61;
+
+    printf("La distance en yards : %.2f\n", yards);
 }
