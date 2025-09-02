@@ -149,15 +149,40 @@ int main() {
     //condition ========================
 
     //challenge 1
-        int num;
+        // int num;
 
-        printf("Entrez un nombre: ");
-        scanf("%d", &num);
+        // printf("Entrez un nombre: ");
+        // scanf("%d", &num);
 
-        if (num % 2 == 0 ){
-            printf("Le nombre est pair\n");
-        }else {
-            printf("le nomber et impair\n");
+        // if (num % 2 == 0 ){
+        //     printf("Le nombre est pair\n");
+        // }else {
+        //     printf("le nomber et impair\n");
+        // }
+
+        //challange 2
+
+        char ch;
+
+        printf("enter a character : ");
+        scanf("%c",&ch);
+
+        switch (ch)
+        {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+        printf("The character '%c' is a vowel.\n", ch);
+            break;
+        default:
+        printf("The character '%c' is not a vowel.\n", ch);
         }
 
     return 0;
