@@ -332,16 +332,31 @@ int main() {
         // }
         // printf("\n");
 
-        int num;
-        int reverse = 0,remaine;
+        //challeng 7
 
-        printf("enter a numbr : ");
-        scanf("%d",&num);
+        // int num;
+        // int reverse = 0,remaine;
 
-        while (num != 0 ){
-            remaine = num % 10;
-            reverse = reverse * 10 + remaine;
-            num = num / 10;
+        // printf("enter a numbr : ");
+        // scanf("%d",&num);
+
+        // while (num != 0 ){
+        //     remaine = num % 10;
+        //     reverse = reverse * 10 + remaine;
+        //     num = num / 10;
+        // }
+        // printf("%d",reverse);
+
+
+
+        //challenge 9
+        int num = 12345;
+        int count = 0;
+
+        while(num != 0){
+            count++;
+            num /= 10;
         }
-        printf("%d",reverse);
-}
+
+        printf("the length of the numbre et : %d",count);
+   }
