@@ -318,17 +318,30 @@ int main() {
 
     //challenge 6
 
-        int num;
+        // int num;
 
-        printf("enter un number : ");
+        // printf("enter un number : ");
+        // scanf("%d",&num);
+
+        // for(int i = 1; i <= num; i++) {
+        //     printf("%d", i * 2);
+
+        //     if (i != num){
+        //         printf(" ,");
+        //     }
+        // }
+        // printf("\n");
+
+        int num;
+        int reverse = 0,remaine;
+
+        printf("enter a numbr : ");
         scanf("%d",&num);
 
-        for(int i = 1; i <= num; i++) {
-            printf("%d", i * 2);
-
-            if (i != num){
-                printf(" ,");
-            }
+        while (num != 0 ){
+            remaine = num % 10;
+            reverse = reverse * 10 + remaine;
+            num = num / 10;
         }
-        printf("\n");
+        printf("%d",reverse);
 }
