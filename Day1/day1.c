@@ -4,6 +4,7 @@
 int main() {
 
 
+    //le variables==========================================
     //Challenge 1
 
     // char nom[] = "bsar";
@@ -107,40 +108,57 @@ int main() {
 
     //challenge 8
 
-    float a,b,c;
-    float moy_ger;
+    // float a,b,c;
+    // float moy_ger;
 
-    printf("enter the first number: ");
-    scanf("%f",&a);
+    // printf("enter the first number: ");
+    // scanf("%f",&a);
 
-    printf("enter the second number: ");
-    scanf("%f",&b);
+    // printf("enter the second number: ");
+    // scanf("%f",&b);
 
-    printf("enter the thrid number: ");
-    scanf("%f",&c);
+    // printf("enter the thrid number: ");
+    // scanf("%f",&c);
 
-    moy_ger = pow((a * b * c), 1.0 / 3.0);
+    // moy_ger = pow((a * b * c), 1.0 / 3.0);
 
-    printf("la moyenne géométrique et: %.2f\n", moy_ger);
+    // printf("la moyenne géométrique et: %.2f\n", moy_ger);
 
 
     //challenge 9
 
-    double x1, y1, z1, x2, y2, z2, distance;
+    // double x1, y1, z1, x2, y2, z2, distance;
 
-    printf("Entrez les coordonnées du premier point (x1, y1, z1) : ");
-    scanf("%lf %lf %lf", &x1, &y1, &z1);
+    // printf("Entrez les coordonnées du premier point (x1, y1, z1) : ");
+    // scanf("%lf %lf %lf", &x1, &y1, &z1);
 
-    printf("Entrez les coordonnées du deuxième point (x2, y2, z2) : ");
-    scanf("%lf %lf %lf", &x2, &y2, &z2);
+    // printf("Entrez les coordonnées du deuxième point (x2, y2, z2) : ");
+    // scanf("%lf %lf %lf", &x2, &y2, &z2);
 
-    double dx = x2 - x1;
-    double dy = y2 - y1;
-    double dz = z2 - z1;
+    // double dx = x2 - x1;
+    // double dy = y2 - y1;
+    // double dz = z2 - z1;
 
-    distance = sqrt(pow(dx, 2) + pow(dy, 2) + pow(dz, 2));
+    // distance = sqrt(pow(dx, 2) + pow(dy, 2) + pow(dz, 2));
 
-    printf("La distance est : %.2lf\n", distance);
+    // printf("La distance est : %.2lf\n", distance);
+
+    // return 0;
+
+
+    //condition ========================
+
+    //challenge 1
+        int num;
+
+        printf("Entrez un nombre: ");
+        scanf("%d", &num);
+
+        if (num % 2 == 0 ){
+            printf("Le nombre est pair\n");
+        }else {
+            printf("le nomber et impair\n");
+        }
 
     return 0;
 }
