@@ -38,14 +38,29 @@ int main() {
     // printf("La distance en yards : %.2f\n", yards);
 
     //challenge 4
-    float kmh,ms;
+    // float kmh,ms;
 
-    printf("Entrez  la vitesse en kilomètres par heure (km/h : ");
-    scanf("%f",&kmh);
+    // printf("Entrez  la vitesse en kilomètres par heure (km/h : ");
+    // scanf("%f",&kmh);
 
-    ms = kmh * 0.27778;
+    // ms = kmh * 0.27778;
 
-    printf("la vitesse en  seconde (m/s): %.2f\n",ms);
+    // printf("la vitesse en  seconde (m/s): %.2f\n",ms);
 
-    return 0;
+    // return 0;
+
+    //challenge 5
+
+    float C;
+
+    printf("Entrez la température en Celsius: ");
+    scanf("%f",&C);
+
+    if (C < 0) {
+        printf(" l'eau à cette température et Solide\n");
+    }else if (C >=0 && C < 100) {
+        printf(" l'eau à cette température et Liquide\n");
+    }else{
+        printf(" l'eau à cette température et Gaz\n");
+    }
 }
