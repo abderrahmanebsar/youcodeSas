@@ -350,13 +350,27 @@ int main() {
 
 
         //challenge 9
-        int num = 12345;
-        int count = 0;
+        // int num = 12345;
+        // int count = 0;
 
-        while(num != 0){
-            count++;
-            num /= 10;
+        // while(num != 0){
+        //     count++;
+        //     num /= 10;
+        // }
+
+        // printf("the length of the numbre et : %d",count);
+
+        //challenge 10
+
+        int num,sum=0;
+
+        printf("enter a numbr : ");
+        scanf("%d",&num);
+
+        for (int i = 1; i <= num; i++){
+            sum += i;
         }
 
-        printf("the length of the numbre et : %d",count);
+        printf("%d",sum);
+
    }
