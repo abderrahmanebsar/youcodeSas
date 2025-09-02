@@ -146,6 +146,32 @@ int main() {
     // return 0;
 
 
+    //challenge 12
+
+    int num, reversed;
+    int d1,d2,d3,d4;
+    
+
+    printf("enter a numer à quatre chiffres : ");
+    scanf("%d",&num);
+    
+    d1 = num / 1000;
+    d2 = (num / 100) % 10;
+    d3 = (num /10) % 10;
+    d4 = num % 10;
+    // remainder = num % 10;   //get the last digite
+    // reverse = reverse * 10 + remainder;
+    // num = num / 10;
+    
+    reversed = d4 * 1000 + d3 *100 + d2 * 10 + d1;
+    
+    printf("the remainder : %d",d1);
+
+    return 0;
+
+
+
+
     //condition ========================
 
     //challenge 1
@@ -162,28 +188,28 @@ int main() {
 
         //challange 2
 
-        char ch;
+    //     char ch;
 
-        printf("enter a character : ");
-        scanf("%c",&ch);
+    //     printf("enter a character : ");
+    //     scanf("%c",&ch);
 
-        switch (ch)
-        {
-        case 'a':
-        case 'e':
-        case 'i':
-        case 'o':
-        case 'u':
-        case 'A':
-        case 'E':
-        case 'I':
-        case 'O':
-        case 'U':
-        printf("The character '%c' is a vowel.\n", ch);
-            break;
-        default:
-        printf("The character '%c' is not a vowel.\n", ch);
-        }
+    //     switch (ch)
+    //     {
+    //     case 'a':
+    //     case 'e':
+    //     case 'i':
+    //     case 'o':
+    //     case 'u':
+    //     case 'A':
+    //     case 'E':
+    //     case 'I':
+    //     case 'O':
+    //     case 'U':
+    //     printf("The character '%c' is a vowel.\n", ch);
+    //         break;
+    //     default:
+    //     printf("The character '%c' is not a vowel.\n", ch);
+    //     }
 
-    return 0;
+    // return 0;
 }
