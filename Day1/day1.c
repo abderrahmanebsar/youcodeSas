@@ -269,14 +269,30 @@ int main() {
 
     //challenge 3
 
-    int num,sum;
+    // int num,sum;
 
-    printf("enter un positive numbr : ");
-    scanf("%d",&num);
+    // printf("enter un positive numbr : ");
+    // scanf("%d",&num);
 
-    for(int i =1; i < num; i++){
-        sum +=i;
+    // for(int i =1; i < num; i++){
+    //     sum +=i;
+    // }
+
+    // printf("la sum et : %d",sum);
+
+
+    //challenge 3
+
+   int num;
+
+   printf("enter a numbre : ");
+   scanf("%d",&num);
+
+   for (int i =1; i <= num; i++){
+      printf("%d", i * 2 - 1);
+        if (i != num){
+            printf(" ,");
+        }
     }
-
-    printf("la sum et : %d",sum);
+    printf("\n");
 }
