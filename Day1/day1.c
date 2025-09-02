@@ -51,16 +51,35 @@ int main() {
 
     //challenge 5
 
-    float C;
+    // float C;
 
-    printf("Entrez la température en Celsius: ");
-    scanf("%f",&C);
+    // printf("Entrez la température en Celsius: ");
+    // scanf("%f",&C);
 
-    if (C < 0) {
-        printf(" l'eau à cette température et Solide\n");
-    }else if (C >=0 && C < 100) {
-        printf(" l'eau à cette température et Liquide\n");
-    }else{
-        printf(" l'eau à cette température et Gaz\n");
+    // if (C < 0) {
+    //     printf(" l'eau à cette température et Solide\n");
+    // }else if (C >=0 && C < 100) {
+    //     printf(" l'eau à cette température et Liquide\n");
+    // }else{
+    //     printf(" l'eau à cette température et Gaz\n");
+    // }
+
+    //challenge 6
+
+    double a,b;
+
+    printf("enter two number (a and b) : ");
+    scanf("%lf %lf", &a, &b);
+
+    if (b != 0){
+        printf("a + b = %.2lf\n", a + b);
+        printf("a - b = %.2lf\n", a - b);
+        printf("a * b = %.2lf\n", a * b);
+        printf("a / b = %.2lf\n", a / b);
+    }else {
+        printf("division by zero not allowed!");
     }
+
+    return 0;
+
 }
