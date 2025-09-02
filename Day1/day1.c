@@ -250,20 +250,33 @@ int main() {
 
     //challenge 2
 
-    int num,n=1;
+    // int num,n=1;
+
+    // printf("enter un positive numbr : ");
+    // scanf("%d",&num);
+
+    // if (num > 0){
+    //     for (int i = 1;i <= num; i++)
+    //     {
+    //         n *=  i;
+    //     }
+        
+    //     printf("factorielle : %d",n);
+    // }else{
+    //     printf("enter a number positive!");
+    // }
+
+
+    //challenge 3
+
+    int num,sum;
 
     printf("enter un positive numbr : ");
     scanf("%d",&num);
 
-    if (num > 0){
-        for (int i = 1;i <= num; i++)
-        {
-            n *=  i;
-        }
-        
-        printf("factorielle : %d",n);
-    }else{
-        printf("enter a number positive!");
+    for(int i =1; i < num; i++){
+        sum +=i;
     }
 
+    printf("la sum et : %d",sum);
 }
