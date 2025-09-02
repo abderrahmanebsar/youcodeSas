@@ -300,18 +300,35 @@ int main() {
     //challenge 5
 
 
-    int base ,exposant, res;
+    // int base ,exposant, res;
 
-    printf("enter le base : ");
-    scanf("%d",&base);
+    // printf("enter le base : ");
+    // scanf("%d",&base);
 
-    printf("enter le exposant : ");
-    scanf("%d",&exposant);
+    // printf("enter le exposant : ");
+    // scanf("%d",&exposant);
 
 
-    for (int i =1; i <= exposant; i++){
-            res *= base;
+    // for (int i =1; i <= exposant; i++){
+    //         res *= base;
+    //     }
+
+    // printf("%d",res);
+
+
+    //challenge 6
+
+        int num;
+
+        printf("enter un number : ");
+        scanf("%d",&num);
+
+        for(int i = 1; i <= num; i++) {
+            printf("%d", i * 2);
+
+            if (i != num){
+                printf(" ,");
+            }
         }
-
-    printf("%d",res);
+        printf("\n");
 }
