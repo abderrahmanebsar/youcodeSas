@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
 
@@ -84,24 +85,43 @@ int main() {
 
     //challenge 7
 
-    float num1, num2, num3;
-    float weighted_average;
-    int weight1=2, weight2 = 3,weight3=5;
+    // float num1, num2, num3;
+    // float weighted_average;
+    // int weight1=2, weight2 = 3,weight3=5;
 
-    int total_weight = weight1 + weight2 + weight3;
+    // int total_weight = weight1 + weight2 + weight3;
+
+    // printf("enter the first number: ");
+    // scanf("%f",&num1);
+
+    // printf("enter the second number: ");
+    // scanf("%f",&num2);
+
+    // printf("enter the thrid number: ");
+    // scanf("%f",&num3);
+
+    // weighted_average = (num1 * weight1 + num2 * weight2 + num3 * weight3  ) / total_weight;
+
+    // printf("the weight average is %.2f\n",weighted_average);
+
+
+    //challenge 8
+
+    float a,b,c;
+    float moy_ger;
 
     printf("enter the first number: ");
-    scanf("%f",&num1);
+    scanf("%f",&a);
 
     printf("enter the second number: ");
-    scanf("%f",&num2);
+    scanf("%f",&b);
 
     printf("enter the thrid number: ");
-    scanf("%f",&num3);
+    scanf("%f",&c);
 
-    weighted_average = (num1 * weight1 + num2 * weight2 + num3 * weight3  ) / total_weight;
+    moy_ger = pow((a * b * c), 1.0 / 3.0);
 
-    printf("the weight average is %.2f\n",weighted_average);
+    printf("la moyenne géométrique et: %.2f\n", moy_ger);
 
     return 0;
 }
