@@ -239,13 +239,31 @@ int main() {
 
     //challenge 1
 
-    int num ;
+    // int num ;
     
-    printf("enter the mult number :");
+    // printf("enter the mult number :");
+    // scanf("%d",&num);
+
+    // for (int i = 1; i <= 10;i++){
+    //     printf("%d * %d = %d", num, i, num * i);
+    // }
+
+    //challenge 2
+
+    int num,n=1;
+
+    printf("enter un positive numbr : ");
     scanf("%d",&num);
 
-    for (int i = 1; i <= 10;i++){
-        printf("%d * %d = %d", num, i, num * i);
+    if (num > 0){
+        for (int i = 1;i <= num; i++)
+        {
+            n *=  i;
+        }
+        
+        printf("factorielle : %d",n);
+    }else{
+        printf("enter a number positive!");
     }
 
 }
