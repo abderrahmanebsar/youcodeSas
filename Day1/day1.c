@@ -17,4 +17,12 @@ int main() {
     printf("email : %s\n",email);
 
 
+    //challenge 2
+
+    float c, k;
+    printf("Entrez la température en Celsius : ");
+    scanf("%f",&c);
+    k = c + 273.15;
+    
+    printf("la température en Kelvin et :%.2f\n",k);
 }
