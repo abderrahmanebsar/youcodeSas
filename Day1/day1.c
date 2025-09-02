@@ -66,20 +66,42 @@ int main() {
 
     //challenge 6
 
-    double a,b;
+    // double a,b;
 
-    printf("enter two number (a and b) : ");
-    scanf("%lf %lf", &a, &b);
+    // printf("enter two number (a and b) : ");
+    // scanf("%lf %lf", &a, &b);
 
-    if (b != 0){
-        printf("a + b = %.2lf\n", a + b);
-        printf("a - b = %.2lf\n", a - b);
-        printf("a * b = %.2lf\n", a * b);
-        printf("a / b = %.2lf\n", a / b);
-    }else {
-        printf("division by zero not allowed!");
-    }
+    // if (b != 0){
+    //     printf("a + b = %.2lf\n", a + b);
+    //     printf("a - b = %.2lf\n", a - b);
+    //     printf("a * b = %.2lf\n", a * b);
+    //     printf("a / b = %.2lf\n", a / b);
+    // }else {
+    //     printf("division by zero not allowed!");
+    // }
+
+
+
+    //challenge 7
+
+    float num1, num2, num3;
+    float weighted_average;
+    int weight1=2, weight2 = 3,weight3=5;
+
+    int total_weight = weight1 + weight2 + weight3;
+
+    printf("enter the first number: ");
+    scanf("%f",&num1);
+
+    printf("enter the second number: ");
+    scanf("%f",&num2);
+
+    printf("enter the thrid number: ");
+    scanf("%f",&num3);
+
+    weighted_average = (num1 * weight1 + num2 * weight2 + num3 * weight3  ) / total_weight;
+
+    printf("the weight average is %.2f\n",weighted_average);
 
     return 0;
-
 }
