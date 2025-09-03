@@ -33,7 +33,33 @@ int main() {
 
     //challenge 3
 
-    int len,sum = 0;
+    // int len,sum = 0;
+    
+    // printf("enter the length of the array : ");
+    // scanf("%d",&len);
+
+    // int arr[len];
+
+    // for (int i = 0; i < len ; i++)
+    // {
+    //     printf("enter the number %d : ",i + 1);
+    //     scanf("%d",&arr[i]);
+    // }
+    
+    // for (int i = 0; i < len ; i++)
+    // {
+    //     sum +=arr[i];
+    // }
+
+    // printf("the sum of the number is : %d", sum);
+    
+    //challenge
+    return 0;
+
+
+    //challenge 4
+
+    int len,max;
     
     printf("enter the length of the array : ");
     scanf("%d",&len);
@@ -46,12 +72,14 @@ int main() {
         scanf("%d",&arr[i]);
     }
     
-    for (int i = 0; i < len ; i++)
+    
+    max = arr[0];
+    for (int i = 1; i < len ; i++)
     {
-        sum +=arr[i];
+        if (arr[i] > max){
+            max = arr[i];
+        }
     }
 
-    printf("the sum of the number is : %d", sum);
-    
-    return 0;
+    printf("the the largest number is  : %d", max);
 }
