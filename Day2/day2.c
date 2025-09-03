@@ -15,20 +15,43 @@ int main() {
 
     //challenge 2
 
-    int len;
-    printf("enter the size of the array : ");
+//     int len;
+//     printf("enter the size of the array : ");
+//     scanf("%d",&len);
+
+//     int arr[len];
+
+//     for (int i = 0; i < len;i++){
+//         printf("enter the number  %d : ",i +1);
+//         scanf("%d",&arr[i]);
+//     }
+
+//    for ( int  i = 0; i < len; i++)
+//     {
+//         printf("%d\n",arr[i]);
+//     }
+
+    //challenge 3
+
+    int len,sum = 0;
+    
+    printf("enter the length of the array : ");
     scanf("%d",&len);
 
     int arr[len];
 
-    for (int i = 0; i < len;i++){
-        printf("enter the number  %d : ",i +1);
+    for (int i = 0; i < len ; i++)
+    {
+        printf("enter the number %d : ",i + 1);
         scanf("%d",&arr[i]);
     }
-
-   for ( int  i = 0; i < len; i++)
-    {
-        printf("%d\n",arr[i]);
-    }
     
+    for (int i = 0; i < len ; i++)
+    {
+        sum +=arr[i];
+    }
+
+    printf("the sum of the number is : %d", sum);
+    
+    return 0;
 }
