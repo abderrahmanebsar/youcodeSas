@@ -59,27 +59,46 @@ int main() {
 
     //challenge 4
 
-    int len,max;
+    // int len,max;
     
-    printf("enter the length of the array : ");
+    // printf("enter the length of the array : ");
+    // scanf("%d",&len);
+
+    // int arr[len];
+
+    // for (int i = 0; i < len ; i++)
+    // {
+    //     printf("enter the number %d : ",i + 1);
+    //     scanf("%d",&arr[i]);
+    // }
+    
+    
+    // max = arr[0];
+    // for (int i = 1; i < len ; i++)
+    // {
+    //     if (arr[i] > max){
+    //         max = arr[i];
+    //     }
+    // }
+
+    // printf("the the largest number is  : %d", max);
+
+    //challenge 9
+
+    int len;
+    printf("enter the size of the array : ");
     scanf("%d",&len);
 
     int arr[len];
 
-    for (int i = 0; i < len ; i++)
-    {
-        printf("enter the number %d : ",i + 1);
+    for (int i = len - 1  ; i >= 0 ;i--){
+        printf("enter the number  : ");
         scanf("%d",&arr[i]);
     }
-    
-    
-    max = arr[0];
-    for (int i = 1; i < len ; i++)
+
+    for ( int  i = 0; i < len; i++)
     {
-        if (arr[i] > max){
-            max = arr[i];
-        }
+        printf("%d\n ",arr[i]);
     }
 
-    printf("the the largest number is  : %d", max);
 }
