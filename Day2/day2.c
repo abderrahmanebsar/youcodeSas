@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdbool.h>
 int main() {
 
     //array 
@@ -104,7 +104,69 @@ int main() {
 
     //challenge 7 
 
+        // int len;
+        
+        // printf("enter the length of the array : ");
+        // scanf("%d",&len);
+    
+        // int arr[len];
+    
+        // for (int i = 0; i < len ; i++)
+        // {
+        //     printf("enter the number %d : ",i + 1);
+        //     scanf("%d",&arr[i]);
+        // }
+
+
+        // for (int  i = 0; i < len; i++)
+        // {
+        //     for (int j = i +1; j < len ; j++)
+        //     {
+        //     if (arr[i] < arr[j]){
+        //         int temp = arr[i];
+        //         arr[i] = arr[j];
+        //         arr[j] = temp;
+        //     }
+        //     }
+        // }
+
+        // for ( int  i = 0; i < len; i++)
+        // {
+        //     printf("%d\n ",arr[i]);
+        // }
+    
+
+        //challenge 8
+
+        // int arr[] = {1,2,3,4,6};
+        // int arr2[5];
+        // int len = 5;
+
+        // for (int i = 0; i < len; i++)
+        // {
+        //     arr2[i] = arr[i] ;
+        // }
+        
+        // printf("this the first array : \n");
+
+        // for (int i = 0; i < len; i++)
+        // {
+        //     printf("%d ,",arr[i]);
+        // }
+
+        // printf("\n");
+        // printf("this the copyed array : \n");
+
+        // for (int i = 0; i < len; i++)
+        // {
+        //     printf("%d ,",arr2[i]);
+        // }
+        
+
+        //challenge 10
         int len;
+        bool isdispo = false;
+        int numbf;
         
         printf("enter the length of the array : ");
         scanf("%d",&len);
@@ -116,54 +178,23 @@ int main() {
             printf("enter the number %d : ",i + 1);
             scanf("%d",&arr[i]);
         }
+        
+        printf("the element that you're searching for : ");
+        scanf("%d",&numbf);
 
-
-        for (int  i = 0; i < len; i++)
+        for (int i = 0; i < len; i++)
         {
-            for (int j = i +1; j < len ; j++)
-            {
-            if (arr[i] < arr[j]){
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
+            if (arr[i] == numbf){
+                isdispo = true;
+                break;
             }
         }
 
-        for ( int  i = 0; i < len; i++)
-        {
-            printf("%d\n ",arr[i]);
-        }
-    
 
-        //challenge 8
-
-        int arr[] = {1,2,3,4,6};
-        int arr2[5];
-        int len = 5;
-
-        for (int i = 0; i < len; i++)
-        {
-            arr2[i] = arr[i] ;
+        if (isdispo) {
+            printf("the number %d that you're looking for is here");
+        }else {
+          printf("the number %d that you're looking for is not here"); 
         }
         
-        printf("this the first array : \n");
-
-        for (int i = 0; i < len; i++)
-        {
-            printf("%d ,",arr[i]);
-        }
-
-        printf("\n");
-        printf("this the copyed array : \n");
-
-        for (int i = 0; i < len; i++)
-        {
-            printf("%d ,",arr2[i]);
-        }
-        
-
-
-
-
 }
