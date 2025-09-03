@@ -136,4 +136,34 @@ int main() {
         }
     
 
+        //challenge 8
+
+        int arr[] = {1,2,3,4,6};
+        int arr2[5];
+        int len = 5;
+
+        for (int i = 0; i < len; i++)
+        {
+            arr2[i] = arr[i] ;
+        }
+        
+        printf("this the first array : \n");
+
+        for (int i = 0; i < len; i++)
+        {
+            printf("%d ,",arr[i]);
+        }
+
+        printf("\n");
+        printf("this the copyed array : \n");
+
+        for (int i = 0; i < len; i++)
+        {
+            printf("%d ,",arr2[i]);
+        }
+        
+
+
+
+
 }
