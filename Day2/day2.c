@@ -85,20 +85,55 @@ int main() {
 
     //challenge 9
 
-    int len;
-    printf("enter the size of the array : ");
-    scanf("%d",&len);
+    // int len;
+    // printf("enter the size of the array : ");
+    // scanf("%d",&len);
 
-    int arr[len];
+    // int arr[len];
 
-    for (int i = len - 1  ; i >= 0 ;i--){
-        printf("enter the number  : ");
-        scanf("%d",&arr[i]);
-    }
+    // for (int i = len - 1  ; i >= 0 ;i--){
+    //     printf("enter the number  : ");
+    //     scanf("%d",&arr[i]);
+    // }
 
-    for ( int  i = 0; i < len; i++)
-    {
-        printf("%d\n ",arr[i]);
-    }
+    // for ( int  i = 0; i < len; i++)
+    // {
+    //     printf("%d\n ",arr[i]);
+    // }
+
+
+    //challenge 7 
+
+        int len;
+        
+        printf("enter the length of the array : ");
+        scanf("%d",&len);
+    
+        int arr[len];
+    
+        for (int i = 0; i < len ; i++)
+        {
+            printf("enter the number %d : ",i + 1);
+            scanf("%d",&arr[i]);
+        }
+
+
+        for (int  i = 0; i < len; i++)
+        {
+            for (int j = i +1; j < len ; j++)
+            {
+            if (arr[i] < arr[j]){
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+            }
+        }
+
+        for ( int  i = 0; i < len; i++)
+        {
+            printf("%d\n ",arr[i]);
+        }
+    
 
 }
