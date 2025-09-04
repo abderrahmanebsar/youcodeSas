@@ -54,7 +54,7 @@ int main() {
     // printf("the sum of the number is : %d", sum);
     
     //challenge
-    return 0;
+    //return 0;
 
 
     //challenge 4
@@ -120,7 +120,7 @@ int main() {
 
         // for (int  i = 0; i < len; i++)
         // {
-        //     for (int j = i +1; j < len ; j++)
+        //     for (int j = i + 1; j < len ; j++)
         //     {
         //     if (arr[i] < arr[j]){
         //         int temp = arr[i];
@@ -164,37 +164,99 @@ int main() {
         
 
         //challenge 10
-        int len;
-        bool isdispo = false;
-        int numbf;
+
+        // int len;
+        // bool isdispo = false;
+        // int numbf;
         
+        // printf("enter the length of the array : ");
+        // scanf("%d",&len);
+    
+        // int arr[len];
+    
+        // for (int i = 0; i < len ; i++)
+        // {
+        //     printf("enter the number %d : ",i + 1);
+        //     scanf("%d",&arr[i]);
+        // }
+        
+        // printf("the element that you're searching for : ");
+        // scanf("%d",&numbf);
+
+        // for (int i = 0; i < len; i++)
+        // {
+        //     if (arr[i] == numbf){
+        //         isdispo = true;
+        //         break;
+        //     }
+        // }
+
+
+        // if (isdispo) {
+        //     printf("the number %d that you're looking for is here");
+        // }else {
+        //   printf("the number %d that you're looking for is not here"); 
+        // }
+
+
+        //the boucle
+        //challenge 2
+
+        // for (int i = 0; i < 8; i++)
+        // {
+        //     for(int j = 0;i < 7;i++){
+        //         printf(" ");
+        //     }
+        //     printf("*");
+
+        //     for(int j = 0;i < 7;i++){
+        //         printf(" ");
+        //     }
+        // }
+
+
+        //challenge 11
+
+        int len;
+
         printf("enter the length of the array : ");
         scanf("%d",&len);
-    
+
+
         int arr[len];
-    
-        for (int i = 0; i < len ; i++)
-        {
-            printf("enter the number %d : ",i + 1);
-            scanf("%d",&arr[i]);
-        }
+        int searchnumbre,replacnum;
         
-        printf("the element that you're searching for : ");
-        scanf("%d",&numbf);
 
         for (int i = 0; i < len; i++)
         {
-            if (arr[i] == numbf){
-                isdispo = true;
-                break;
-            }
-        }
-
-
-        if (isdispo) {
-            printf("the number %d that you're looking for is here");
-        }else {
-          printf("the number %d that you're looking for is not here"); 
+           printf("enter the number %d : ",i + 1);
+           scanf("%d",&arr[i]); 
         }
         
+
+
+        printf("entre the number you want to replce : ");
+        scanf("%d",&searchnumbre);
+
+        printf("enter the new number you want replace with : ");
+        scanf("%d",&replacnum);
+
+        for (int i = 0; i < len; i++)
+        {
+            if (arr[i] == searchnumbre)
+            {
+                arr[i] = replacnum;
+            }
+            
+        }
+
+        
+        for (int i = 0; i < len; i++)
+        {
+            printf("%d  ",arr[i]);
+        }
+        
+        
+
+
 }
