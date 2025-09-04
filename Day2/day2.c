@@ -217,45 +217,93 @@ int main() {
 
         //challenge 11
 
-        int len;
+        // int len;
 
-        printf("enter the length of the array : ");
-        scanf("%d",&len);
+        // printf("enter the length of the array : ");
+        // scanf("%d",&len);
 
 
-        int arr[len];
-        int searchnumbre,replacnum;
+        // int arr[len];
+        // int searchnumbre,replacnum;
         
 
-        for (int i = 0; i < len; i++)
-        {
-           printf("enter the number %d : ",i + 1);
-           scanf("%d",&arr[i]); 
-        }
+        // for (int i = 0; i < len; i++)
+        // {
+        //    printf("enter the number %d : ",i + 1);
+        //    scanf("%d",&arr[i]); 
+        // }
         
 
 
-        printf("entre the number you want to replce : ");
-        scanf("%d",&searchnumbre);
+        // printf("entre the number you want to replce : ");
+        // scanf("%d",&searchnumbre);
 
-        printf("enter the new number you want replace with : ");
-        scanf("%d",&replacnum);
+        // printf("enter the new number you want replace with : ");
+        // scanf("%d",&replacnum);
 
-        for (int i = 0; i < len; i++)
-        {
-            if (arr[i] == searchnumbre)
-            {
-                arr[i] = replacnum;
-            }
+        // for (int i = 0; i < len; i++)
+        // {
+        //     if (arr[i] == searchnumbre)
+        //     {
+        //         arr[i] = replacnum;
+        //     }
             
-        }
+        // }
 
         
-        for (int i = 0; i < len; i++)
+        // for (int i = 0; i < len; i++)
+        // {
+        //     printf("%d  ",arr[i]);
+        // }
+        
+        
+        //challenge 15
+
+        int len1,len2;
+  
+
+        printf("enter the length of the array 1 : ");
+        scanf("%d",&len1);
+
+        int arr1[len1];
+
+        for (int i = 0; i < len1; i++)
         {
-            printf("%d  ",arr[i]);
+            printf("enter the number %d : ",i + 1);
+            scanf("%d",&arr1[i]);
+        }
+
+        printf("enter the length of the array 2 : ");
+        scanf("%d",&len2);
+
+        int arr2[len2];
+
+        for (int i = 0; i < len2; i++)
+        {
+            printf("enter the number %d : ",i + 1);
+            scanf("%d",&arr2[i]);
         }
         
+
+        int cpyarr [len1 + len2];
+        for (int i = 0; i < len1; i++)
+        {
+            cpyarr[i] =arr1[i];
+        }
+
+        for (int i = 0 ; i < len2; i++)
+        {
+            cpyarr[len1 + i] = arr2[i];
+        }
+        
+        
+        for (int i = 0; i < len1 + len2; i++)
+        {
+            printf("%d\n",cpyarr[i]);
+        }
+        
+
+
         
 
 
