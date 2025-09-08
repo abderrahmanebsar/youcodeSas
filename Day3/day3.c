@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main() {
     //challnege  1
@@ -294,33 +295,61 @@ int main() {
 
 //chllenge 2
 
-struct student
+// struct student
+// {
+//     char firstname[100];
+//     char lastname[100];
+//     int grade[100];
+// };
+
+
+// struct student stud;
+
+// strcpy(stud.firstname, "abderrahmane");
+// strcpy(stud.lastname, "bsar");
+// stud.grade[0] = 11;
+// stud.grade[1] = 20;
+// stud.grade[2] = 15;
+// stud.grade[3] = 13;
+// stud.grade[4] = 19;
+
+// printf("your first name is : %s\n",stud.firstname);
+// printf("your last name is : %s\n",stud.lastname);
+// printf("the grade : \n");
+
+// for (int i = 0; i < 5; i++)
+// {
+//     printf("%d\n",stud.grade[i]);
+// }
+// printf("\n");
+
+
+//challenge 4
+
+struct Point
 {
-    char firstname[100];
-    char lastname[100];
-    int grade[100];
+    int x;
+    int y;  
 };
 
+struct Point point;
+struct Point *p = &point;
 
-struct student stud;
+p = (struct Point*) malloc(sizeof(struct Point));
 
-strcpy(stud.firstname, "abderrahmane");
-strcpy(stud.lastname, "bsar");
-stud.grade[0] = 11;
-stud.grade[1] = 20;
-stud.grade[2] = 15;
-stud.grade[3] = 13;
-stud.grade[4] = 19;
-
-printf("your first name is : %s\n",stud.firstname);
-printf("your last name is : %s\n",stud.lastname);
-printf("the grade : \n");
-
-for (int i = 0; i < 5; i++)
+if (p == NULL)
 {
-    printf("%d\n",stud.grade[i]);
+    printf("memory allocation failed\n");
 }
-printf("\n");
+
+
+p->x = 10;
+p->y = 20;
+
+free(p);
+
+printf("Pont coordinates : x = %d, y = %d\n",p->x,p->y);
+
 
 
 
