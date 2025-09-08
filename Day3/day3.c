@@ -3,6 +3,28 @@
 #include <string.h>
 #include <stdlib.h>
 
+struct Book
+{
+    char title[100];
+    char author[100];
+    int year;
+};
+
+struct Book createBook(const char *title, const char *author, int year) {
+    struct Book b;
+
+
+    strncpy(b.title, title, sizeof(b.title) - 1);
+    b.title[sizeof(b.title) - 1] = '\0';
+
+    strncpy(b.author, author, sizeof(b.author) - 1);
+    b.author[sizeof(b.author) - 1] = '\0';
+
+    b.year = year;
+
+    return b;
+}
+
 int main() {
     //challnege  1
     // char str[50];
@@ -326,30 +348,38 @@ int main() {
 
 //challenge 4
 
-struct Point
-{
-    int x;
-    int y;  
-};
+// struct Point
+// {
+//     int x;
+//     int y;  
+// };
 
-struct Point point;
-struct Point *p = &point;
+// struct Point point;
+// struct Point *p = &point;
 
-p = (struct Point*) malloc(sizeof(struct Point));
+// p = (struct Point*) malloc(sizeof(struct Point));
 
-if (p == NULL)
-{
-    printf("memory allocation failed\n");
-}
+// if (p == NULL)
+// {
+//     printf("memory allocation failed\n");
+// }
 
 
-p->x = 10;
-p->y = 20;
+// p->x = 10;
+// p->y = 20;
 
-free(p);
+// free(p);
 
-printf("Pont coordinates : x = %d, y = %d\n",p->x,p->y);
+// printf("Pont coordinates : x = %d, y = %d\n",p->x,p->y);
 
+
+//Challenge 5
+
+struct Book mybook = createBook("cna't hurt me ","dived gagen",2001);
+
+printf("the book title : %s\n",mybook.title);
+printf("the book author : %s\n",mybook.author);
+printf("the book year : %d\n",mybook.year);
 
 
 
