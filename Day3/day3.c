@@ -101,23 +101,45 @@ int main() {
 
     //challenge 5
 
-    char str[100];
-    char reverse[100];
-    int len,j,i;
+    // char str[100];
+    // char reverse[100];
+    // int len,j,i;
     
 
-    printf("enter the string : ");
+    // printf("enter the string : ");
+    // scanf("%s",str);
+
+    // len = strlen(str);
+
+
+    // for (i = len - 1,j = 0; i >= 0 ; i--,j++)
+    // {
+    //     reverse[j] = str[i];
+    // }
+
+    // reverse[j] = '\0';
+    
+    // printf("the  reverse string is : %s\n", reverse);
+
+    //challenge 6
+
+    char str[100];
+    char chrct;
+    int i =0,count=0;
+
+    printf("enter a string : ");
     scanf("%s",str);
 
-    len = strlen(str);
+    printf("enter the character : ");
+    scanf(" %c",&chrct);
 
-
-    for (i = len - 1,j = 0; i >= 0 ; i--,j++)
-    {
-        reverse[j] = str[i];
+    while(str[i] != '\0'){
+        if(str[i] == chrct){
+            count++;
+        }
+        i++;
     }
 
-    reverse[j] = '\0';
+    printf("the count of the character %c is : %d",chrct,count);
     
-    printf("the  reverse string is : %s\n", reverse);
 }
