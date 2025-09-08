@@ -123,23 +123,72 @@ int main() {
 
     //challenge 6
 
-    char str[100];
-    char chrct;
-    int i =0,count=0;
+    // char str[100];
+    // char chrct;
+    // int i =0,count=0;
 
-    printf("enter a string : ");
+    // printf("enter a string : ");
+    // scanf("%s",str);
+
+    // printf("enter the character : ");
+    // scanf(" %c",&chrct);
+
+    // while(str[i] != '\0'){
+    //     if(str[i] == chrct){
+    //         count++;
+    //     }
+    //     i++;
+    // }
+
+    // printf("the count of the character %c is : %d",chrct,count);
+
+    //challenge 7 
+
+    // char str[100];
+    // int i = 0;
+    // char uppstr[100];
+
+    // printf("enter the string : ");
+    // scanf("%s",str);
+
+    // while (str[i] != '\0')
+    // {
+    //    uppstr[i] = str[i] - 32;
+    //    i++;
+    // }
+
+    //uppstr[i] = '\0';
+    
+
+    // printf("the uppercse string is : %s",uppstr);
+
+
+    //challenge 8
+
+
+    char str[100];
+    int i = 0;
+    char lowercs[100];
+
+    printf("enter the string : ");
     scanf("%s",str);
 
-    printf("enter the character : ");
-    scanf(" %c",&chrct);
-
-    while(str[i] != '\0'){
-        if(str[i] == chrct){
-            count++;
+    while (str[i] != '\0')
+    {
+        if (str[i] >= 'A' && str[i] <= 'Z')
+        {
+            lowercs[i] = str[i] + 32;
+        }else{
+            lowercs[i] = str[i];
         }
-        i++;
+       i++;
     }
+    
+    lowercs[i]='\0';
 
-    printf("the count of the character %c is : %d",chrct,count);
+    printf("the uppercse string is : %s",lowercs);
+
+
+    
     
 }
