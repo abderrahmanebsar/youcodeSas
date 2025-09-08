@@ -228,41 +228,68 @@ int main() {
  //challenge 10
 
 
- char str[100];
- char word[50];
- int i,j,found = 0;
+//  char str[100];
+//  char word[50];
+//  int i,j,found = 0;
 
 
-printf("enter the sentence: ");
-fgets(str,20,stdin);
+// printf("enter the sentence: ");
+// fgets(str,20,stdin);
 
-printf("enter the word: ");
-scanf("%s",word);
+// printf("enter the word: ");
+// scanf("%s",word);
 
 
-for (i = 0; str[i] != '\0'; i++)
+// for (i = 0; str[i] != '\0'; i++)
+// {
+//     for (j = 0; word[j] != '\0'; j++)
+//     {
+//         if (str[i + j] != word[j])
+//         {
+//             break;
+//         }
+//     }
+
+//     if (word[j] == '\0') 
+//     {
+//         found = 1;
+//         break;
+//     }
+// } 
+
+// if (found)
+// {
+//     printf("Substring found\n");
+// }else{
+//     printf("Substring not found\n");
+// }
+
+
+//struct
+
+//chllenge 1
+
+struct person
 {
-    for (j = 0; word[j] != '\0'; j++)
-    {
-        if (str[i + j] != word[j])
-        {
-            break;
-        }
-    }
+    char name[100];
+    char lastname[100];
+    int age;
+};
 
-    if (word[j] == '\0') 
-    {
-        found = 1;
-        break;
-    }
-} 
+struct person p;
 
-if (found)
-{
-    printf("Substring found\n");
-}else{
-    printf("Substring not found\n");
-}
+printf("enter the your name : ");
+scanf("%s",p.name);
+
+printf("enter the your last name : ");
+scanf("%s",p.lastname);
+
+printf("enter the your age : ");
+scanf("%d",&p.age);
+
+printf("name : %s\n",p.name);
+printf("last name : %s\n",p.lastname);
+printf("age : %d\n",p.age);
 
 
 
