@@ -61,32 +61,63 @@ int main() {
 
     //challenge 4
 
-    char str1[100];
-    char str2[100];
-    bool isdifferent = false;
+    // char str1[100];
+    // char str2[100];
+    // bool isdifferent = false;
+    // int i =0;
 
 
-    printf("enter the first string : ");
-    scanf("%s",str1);
+    // printf("enter the first string : ");
+    // scanf("%s",str1);
 
 
-    printf("enter the second string : ");
-    scanf("%s",str2);
+    // printf("enter the second string : ");
+    // scanf("%s",str2);
 
 
-    for (int i = 0; i < strlen(str1); i++)
+    // for (int i = 0; i < strlen(str1); i++)
+    // {
+    //     if(str1[i] != str2[i]) {
+    //         isdifferent = true;
+    //     }
+    // }
+
+    // while(str1[i] != '\0' && str2[i] != '\0' ){
+    //     if(str1[i] != str2[i]) {
+    //         isdifferent = true;
+    //         break;
+    //     }
+    //     i++;
+    // }
+
+    // if (isdifferent)
+    // {
+    //    printf("the two string are different ");
+    // }else{
+    //     printf("the two string are the same");
+    // }
+    
+
+
+    //challenge 5
+
+    char str[100];
+    char reverse[100];
+    int len,j,i;
+    
+
+    printf("enter the string : ");
+    scanf("%s",str);
+
+    len = strlen(str);
+
+
+    for (i = len - 1,j = 0; i >= 0 ; i--,j++)
     {
-        if(str1[i] != str2[i]) {
-            isdifferent = true;
-        }
+        reverse[j] = str[i];
     }
 
-    if (isdifferent)
-    {
-       printf("the two string are different ");
-    }else{
-        printf("the two string are the same");
-    }
+    reverse[j] = '\0';
     
-    
-}   
+    printf("the  reverse string is : %s\n", reverse);
+}
