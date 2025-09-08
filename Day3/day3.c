@@ -186,9 +186,10 @@ int main() {
     
     // lowercs[i]='\0';
 
-    // printf("the uppercse string is : %s",lowercs);
+    // printf("the lower string is : %s",lowercs);
 
 
+    //challenge 9
     // char str[100];
     // int i = 0, len = 0;
 
