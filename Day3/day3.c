@@ -269,27 +269,61 @@ int main() {
 
 //chllenge 1
 
-struct person
+// struct person
+// {
+//     char name[100];
+//     char lastname[100];
+//     int age;
+// };
+
+// struct person p;
+
+// printf("enter the your name : ");
+// scanf("%s",p.name);
+
+// printf("enter the your last name : ");
+// scanf("%s",p.lastname);
+
+// printf("enter the your age : ");
+// scanf("%d",&p.age);
+
+// printf("name : %s\n",p.name);
+// printf("last name : %s\n",p.lastname);
+// printf("age : %d\n",p.age);
+
+
+//chllenge 2
+
+struct student
 {
-    char name[100];
+    char firstname[100];
     char lastname[100];
-    int age;
+    int grade[100];
 };
 
-struct person p;
 
-printf("enter the your name : ");
-scanf("%s",p.name);
+struct student stud;
 
-printf("enter the your last name : ");
-scanf("%s",p.lastname);
+strcpy(stud.firstname, "abderrahmane");
+strcpy(stud.lastname, "bsar");
+stud.grade[0] = 11;
+stud.grade[1] = 20;
+stud.grade[2] = 15;
+stud.grade[3] = 13;
+stud.grade[4] = 19;
 
-printf("enter the your age : ");
-scanf("%d",&p.age);
+printf("your first name is : %s\n",stud.firstname);
+printf("your last name is : %s\n",stud.lastname);
+printf("the grade : \n");
 
-printf("name : %s\n",p.name);
-printf("last name : %s\n",p.lastname);
-printf("age : %d\n",p.age);
+for (int i = 0; i < 5; i++)
+{
+    printf("%d\n",stud.grade[i]);
+}
+printf("\n");
+
+
+
 
 
 
