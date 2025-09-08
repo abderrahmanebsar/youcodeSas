@@ -189,42 +189,81 @@ int main() {
     // printf("the uppercse string is : %s",lowercs);
 
 
-    char str[100];
-    int i = 0, len = 0;
+    // char str[100];
+    // int i = 0, len = 0;
 
-    printf("enter the string : ");
-    fgets(str,20,stdin);
+    // printf("enter the string : ");
+    // fgets(str,20,stdin);
 
 
-    while (str[i] != '\0')
-    {
-        if(str[i] != '\n'){
-          len++; 
-        }
-        i++; 
-    }
+    // while (str[i] != '\0')
+    // {
+    //     if(str[i] != '\n'){
+    //       len++; 
+    //     }
+    //     i++; 
+    // }
 
-    for (int i = 0; i < len;)
-    {
-        if (str[i] == ' ')
-        {
-            for (int j = i; j < len ; j++)
-            {
-                str[j] = str[j + 1];
-            }
-            len--;
+    // for (int i = 0; i < len;)
+    // {
+    //     if (str[i] == ' ')
+    //     {
+    //         for (int j = i; j < len ; j++)
+    //         {
+    //             str[j] = str[j + 1];
+    //         }
+    //         len--;
             
-        }else{
-            i++;
-        }
+    //     }else{
+    //         i++;
+    //     }
         
-    }
+    // }
     
 
-    printf("the length of str is : %s",str);
-    
-    
-    
+    // printf("the length of str is : %s",str);
+
+
+ //challenge 10
+
+
+ char str[100];
+ char word[50];
+ int i,j,found = 0;
+
+
+printf("enter the sentence: ");
+fgets(str,20,stdin);
+
+printf("enter the word: ");
+scanf("%s",word);
+
+
+for (i = 0; str[i] != '\0'; i++)
+{
+    for (j = 0; word[j] != '\0'; j++)
+    {
+        if (str[i + j] != word[j])
+        {
+            break;
+        }
+    }
+
+    if (word[j] == '\0') 
+    {
+        found = 1;
+        break;
+    }
+} 
+
+if (found)
+{
+    printf("Substring found\n");
+}else{
+    printf("Substring not found\n");
+}
+
+
 
     
     
