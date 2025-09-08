@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
 
 int main() {
     //challnege  1
@@ -28,9 +30,40 @@ int main() {
 
     //challenge 3
 
+    // char str1[100];
+    // char str2[100];
+    // int i = 0, j = 0;
+
+
+    // printf("enter the first string : ");
+    // scanf("%s",str1);
+
+
+    // printf("enter the second string : ");
+    // scanf("%s",str2);
+
+
+    // while (str1[i] != '\0'){
+    //     i++;
+    // }
+
+    // while (str2[j] != '\0') {
+    //     str1[i] = str2[j];
+    //     i++;
+    //     j++;
+    // }
+    
+
+    // str1[i] = '\0';
+
+    // printf("the marges string is : %s",str1);
+
+
+    //challenge 4
+
     char str1[100];
     char str2[100];
-    int i = 0, j = 0;
+    bool isdifferent = false;
 
 
     printf("enter the first string : ");
@@ -41,19 +74,19 @@ int main() {
     scanf("%s",str2);
 
 
-    while (str1[i] != '\0'){
-        i++;
+    for (int i = 0; i < strlen(str1); i++)
+    {
+        if(str1[i] != str2[i]) {
+            isdifferent = true;
+        }
     }
 
-    while (str2[j] != '\0') {
-        str1[i] = str2[j];
-        i++;
-        j++;
+    if (isdifferent)
+    {
+       printf("the two string are different ");
+    }else{
+        printf("the two string are the same");
     }
     
-
-    str1[i] = '\0';
-
-    printf("the marges string is : %s",str1);
-
+    
 }   
