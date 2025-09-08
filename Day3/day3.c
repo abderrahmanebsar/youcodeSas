@@ -166,28 +166,65 @@ int main() {
     //challenge 8
 
 
+    // char str[100];
+    // int i = 0;
+    // char lowercs[100];
+
+    // printf("enter the string : ");
+    // scanf("%s",str);
+
+    // while (str[i] != '\0')
+    // {
+    //     if (str[i] >= 'A' && str[i] <= 'Z')
+    //     {
+    //         lowercs[i] = str[i] + 32;
+    //     }else{
+    //         lowercs[i] = str[i];
+    //     }
+    //    i++;
+    // }
+    
+    // lowercs[i]='\0';
+
+    // printf("the uppercse string is : %s",lowercs);
+
+
     char str[100];
-    int i = 0;
-    char lowercs[100];
+    int i = 0, len = 0;
 
     printf("enter the string : ");
-    scanf("%s",str);
+    fgets(str,20,stdin);
+
 
     while (str[i] != '\0')
     {
-        if (str[i] >= 'A' && str[i] <= 'Z')
-        {
-            lowercs[i] = str[i] + 32;
-        }else{
-            lowercs[i] = str[i];
+        if(str[i] != '\n'){
+          len++; 
         }
-       i++;
+        i++; 
+    }
+
+    for (int i = 0; i < len;)
+    {
+        if (str[i] == ' ')
+        {
+            for (int j = i; j < len ; j++)
+            {
+                str[j] = str[j + 1];
+            }
+            len--;
+            
+        }else{
+            i++;
+        }
+        
     }
     
-    lowercs[i]='\0';
 
-    printf("the uppercse string is : %s",lowercs);
-
+    printf("the length of str is : %s",str);
+    
+    
+    
 
     
     
